@@ -13,6 +13,7 @@
     --medium_blue:#2A2B3D;
     --opacity: rgba(3, 5, 28, 0.85);
     --invisible: rgba(0, 0, 0, 0);
+    --dark_blue_mobile: #232635;
 }
 body {
     background-color: var(--dark_blue);
@@ -76,14 +77,17 @@ body {
     display: flex;
     position: inherit;
     justify-content: center;
+    align-items: center;
     z-index: 1;
 }
 .header__container .photo * {
-    height: 100%;
-    bottom: 0;
+    width: 100%;
+    align-self: center;
 }
 .header__container .photo {
-    z-index: 1;
+    width: 290px;
+    z-index: 2;
+    /* align-self: center; */
 }
 .header__container .circle {
     width: inherit;
@@ -92,6 +96,7 @@ body {
     border-radius: 50%;
     background-color: var(--medium_blue);
     top: 7%;
+    z-index: 1;
 }
 /**titulo general*/
 .header__title {
@@ -413,6 +418,9 @@ body {
     }
 }
 @media (max-width: 576px){
+    body {
+        background-color: var(--dark_blue_mobile);
+    }
     .nav {
         width: 100%;
         justify-content: flex-end;
@@ -468,6 +476,7 @@ body {
     /*header*/
     .header {
         width: 100%;
+        background-color: var(--dark_blue_mobile);
         position: static ;
         display: flex;
         flex-direction: column;
@@ -480,32 +489,48 @@ body {
         align-items: center;
         margin-top: 60px;
     }
+    .social__media .icon__circle {
+        background-color: var(--white);
+    }
+    .icon__circle a {
+        color:var(--dark_blue_mobile);
+    }
     .header__container{
         margin-top: 10%;
         width: 300px;
         height: 300px;
         position: relative;
     }
+    .header__container .photo {
+        width: 200px;
+        z-index: 2;
+    }
+    .header__container .circle {
+        background-color: var(--gray);
+    }
     .header .header__experience {
         width: 90%;
+        background-color: var(--gray);
         order: 2;
         margin-top: 40px;
     }
     .header .header__experience .icons__box {
+        background-color: var(--white);
         height: 55px;
     }
     .icons__box i {
+        color:var(--dark_blue_mobile);
         font-size: 42px;
     }
     /**TITULO GENERAL*/
     .header__title .noun {
-        font-size: 32px;
+        font-size: 30px;
         padding: 0;
         font-weight: normal;
     }
     .header__title .name {
         width: 70%;
-        font-size: 75px;
+        font-size: 65px;
         text-align: center;
         border-top: none;
         border-bottom: solid white ;
@@ -515,14 +540,17 @@ body {
     .header__title .text__1 {
         width: 80%;
         text-align: center;
-        font-size: 25px;
+        font-size: 18px;
         padding-top: 15px;
         padding-bottom: 40px;
     }
     .header__title .text__2 {
         width: 100%;
         text-align: center;
-        font-size: 25px;
+        font-size: 18px;
+    }
+    .main__article p {
+        width: 90%;
     }
     /*Iconos de las redes sociales*/
     .social__media {
@@ -537,6 +565,7 @@ body {
     /*?--MIS SERVICIOS*/
     .main {
         width: 100%;
+        background-color: var(--dark_blue_mobile);
     }
     .main__services {
         gap: 20px;
@@ -546,7 +575,7 @@ body {
         width: 95%;
         align-self: flex-end;
         overflow-x: scroll;
-        gap: 40px;
+        gap: 30px;
     }
     .main__services .box__services h3 {
         font-size: 25px;
@@ -556,7 +585,7 @@ body {
         margin:0 5px 15%;
     }
     .main__services .box__services .box {
-        width: 250px;
+        width: 230px;
         gap: 30px;
     }
     .main__services .box__services i {
@@ -571,6 +600,7 @@ body {
     }
     .portfolio__slider {
         width: 95%;
+        height: 250px;
         gap: 15px;
     }
     .box__contact {
@@ -581,7 +611,7 @@ body {
         gap: 40px;
     }
     .main__contact .box__contact .box {
-        width: 40%;
+        width: 50%;
         gap: 10px;
     }
     .main__contact .box p {
@@ -596,6 +626,7 @@ body {
     }
     .footer {
         width: 100%;
+        background-color: var(--dark_blue_mobile);
         font-size: 16px;
     }
 }
@@ -630,6 +661,10 @@ body {
         margin-top: 1%;
         width: 200px;
         height: 200px;
+    }
+    .header__container .photo {
+        width: 132px;
+        z-index: 2;
     }
     .header .header__title {
         margin-top: 40px;
@@ -729,7 +764,7 @@ body {
         font-size: 25px;
     }
     .main__contact .box__contact .box {
-        width: 50%;
+        width: 60%;
         gap: 3px;
     }
     .main__contact .box p {
@@ -740,7 +775,7 @@ body {
         font-size: 13px;
     }
     .main__contact .box__contact a {
-        top: 25%;
+        top: 20%;
         font-size: 50px;
        
     }
