@@ -418,9 +418,6 @@ body {
     }
 }
 @media (max-width: 576px){
-    body {
-        background-color: var(--dark_blue_mobile);
-    }
     .nav {
         width: 100%;
         justify-content: flex-end;
@@ -476,7 +473,6 @@ body {
     /*header*/
     .header {
         width: 100%;
-        background-color: var(--dark_blue_mobile);
         position: static ;
         display: flex;
         flex-direction: column;
@@ -489,12 +485,6 @@ body {
         align-items: center;
         margin-top: 60px;
     }
-    .social__media .icon__circle {
-        background-color: var(--white);
-    }
-    .icon__circle a {
-        color:var(--dark_blue_mobile);
-    }
     .header__container{
         margin-top: 10%;
         width: 300px;
@@ -505,21 +495,15 @@ body {
         width: 200px;
         z-index: 2;
     }
-    .header__container .circle {
-        background-color: var(--gray);
-    }
     .header .header__experience {
         width: 90%;
-        background-color: var(--gray);
         order: 2;
         margin-top: 40px;
     }
     .header .header__experience .icons__box {
-        background-color: var(--white);
         height: 55px;
     }
     .icons__box i {
-        color:var(--dark_blue_mobile);
         font-size: 42px;
     }
     /**TITULO GENERAL*/
@@ -565,7 +549,6 @@ body {
     /*?--MIS SERVICIOS*/
     .main {
         width: 100%;
-        background-color: var(--dark_blue_mobile);
     }
     .main__services {
         gap: 20px;
@@ -626,7 +609,6 @@ body {
     }
     .footer {
         width: 100%;
-        background-color: var(--dark_blue_mobile);
         font-size: 16px;
     }
 }
