@@ -7,13 +7,13 @@
 }
 :root {
     --light_blue:#34B0BE;
-    --gray:#D1CECA;
+    --gray:#454557;
     --dark_blue:#03051C;
     --white:#ffffff;
     --medium_blue:#2A2B3D;
     --opacity: rgba(3, 5, 28, 0.85);
     --invisible: rgba(0, 0, 0, 0);
-    --dark_blue_mobile: #232635;
+    --dark_blue_mobile: #0f1228;
 }
 body {
     background-color: var(--dark_blue);
@@ -137,7 +137,7 @@ body {
     margin-top: 40px;
 }
 .social__media .icon__circle {
-    background-color: var(--gray);
+    background-color: var(--white);
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -160,7 +160,7 @@ body {
     z-index: 3;
 }
 .header .header__experience .icons__box {
-    background-color: var(--gray);
+    background-color: var(--white);
     width: 21%;
     height: 90px;
     margin-top: 5%;
