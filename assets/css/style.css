@@ -78,9 +78,11 @@ body {
     justify-content: center;
     z-index: 1;
 }
-.header__container .photo {
-    height:100%;
+.header__container .photo * {
+    height: 100%;
     bottom: 0;
+}
+.header__container .photo {
     z-index: 1;
 }
 .header__container .circle {
@@ -459,7 +461,6 @@ body {
         height: 45px;
         color: var(--white);
         font-size: 30px;
-        border-radius: 50%;
     }
     .nav__menu__visible {
         left: 0;
@@ -489,6 +490,12 @@ body {
         width: 90%;
         order: 2;
         margin-top: 40px;
+    }
+    .header .header__experience .icons__box {
+        height: 55px;
+    }
+    .icons__box i {
+        font-size: 42px;
     }
     /**TITULO GENERAL*/
     .header__title .noun {
@@ -590,5 +597,155 @@ body {
     .footer {
         width: 100%;
         font-size: 16px;
+    }
+}
+@media (max-width: 320px) {
+    .nav {
+        width: 100%;
+    }
+    .nav__menu {
+        gap: 30px;
+    }
+    .nav .menu__li__link {
+        font-size: 16px;
+    }
+    .nav__toggle {
+        width: 5% + 25px;
+        padding-right: 5%;
+        padding-top: 3%;
+        /* position: static; */
+    }
+    .nav__toggle i {
+        width: 25px;
+        height: 25px;
+        font-size: 23px;
+    }
+    .header {
+        width: 100%;
+    }
+    .main {
+        width: 100%;
+    }
+    .header__container{
+        margin-top: 1%;
+        width: 200px;
+        height: 200px;
+    }
+    .header .header__title {
+        margin-top: 40px;
+    }
+    .header__title .noun {
+        font-size: 20px;
+    }
+    .header__title .name {
+        width: 70%;
+        font-size: 40px;
+    }
+    .header__title .text__1 {
+        width: 80%;
+        text-align: center;
+        font-size: 15px;
+        padding-bottom: 25px;
+    }
+    .header__title .text__2 {
+        font-size: 15px;
+    }
+    .social__media {
+        margin-top: 30px;
+    }
+    .social__media .icon__circle {
+        width: 35px;
+        height: 35px;
+    }
+    .social__media .icon__circle a {
+        font-size: 20px;
+    }
+    .header .header__experience {
+        width: 90%;
+        margin-top: 40px;
+    }
+    .header .header__experience .icons__box {
+        height: 40px;
+    }
+    .header__experience .icons__box i {
+        font-size: 30px;
+    }
+    .main__article {
+        margin-top: 55px;
+        margin-bottom: 55px;
+        gap: 20px;
+    }
+    .main__article h2 {
+        font-size: 25px;
+    }
+    .main__article p {
+        width: 90%;
+        font-size: 13px;
+        line-height: 20px;
+    }
+    /*?--MIS SERVICIOS*/
+    .main__services {
+        gap: 30px;
+    }
+    .main__services .box__services {
+        gap: 20px;
+    }
+    .main__services .box__services .box {
+        width: 210px;
+    }
+    .main__services h2 {
+        font-size:  25px;
+    }
+    .main__services .box__services p {
+        font-size: 13px;
+    }
+    .main__services .box__services h3 {
+        font-size: 21px;
+    }
+    .main__services .box__services i {
+        font-size: 70px;
+    }
+    .main__skills .skill__tittle {
+        font-size: 25px;
+    }
+    .main__skills .skills p {
+        font-size: 13px;
+    }
+    .main__portfolio {
+        display: flex;
+        flex-direction: column;
+        gap: 40PX;
+        align-items: center;
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+    .main__portfolio h3 {
+        font-size: 25px;
+    }
+    .portfolio__slider {
+        height: 200px;
+    }
+    .main__contact h2 {
+        font-size: 25px;
+    }
+    .main__contact .box__contact .box {
+        width: 50%;
+        gap: 3px;
+    }
+    .main__contact .box p {
+        margin-bottom: 15px;
+    }
+    .main__contact .box h3 {
+        margin-top: 5px;
+        font-size: 13px;
+    }
+    .main__contact .box__contact a {
+        top: 25%;
+        font-size: 50px;
+       
+    }
+    .footer {
+        width: 100%;
+        font-size: 12px;
     }
 }

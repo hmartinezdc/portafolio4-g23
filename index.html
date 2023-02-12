@@ -58,7 +58,12 @@
             </div>
         </section>
         <div class="header__container">
-            <img class="photo" src="/assets/img/photo desktop.png" alt="">
+            <picture class="photo">
+                <source srcset="/assets/img/photo desktop.png" media="(min-width: 786px)">
+                <source srcset="/assets/img/photo mobile.png" media="(min-width: 320px)">
+                <img src="/assets/img/photo mobile.png">
+                <!-- <img src="/assets/img/photo desktop.png"> -->
+            </picture>
             <div class="circle"></div>
         </div>
         <div class="header__experience">
@@ -134,13 +139,14 @@
                     <img src="/assets/img/Ellipse 14.svg" alt="">
                     <h3>Número de celular</h3>
                     <p>5523652412</p>
-                    <a href=""><i class="fa-solid fa-phone"></i></a>
+                    <a href="https://wa.me/0000000000000?text=tuMensajeDeTexto" 
+                    target="_blank"><i class="fa-solid fa-phone"></i></a>
                 </div>
                 <div class="box">
                     <img src="/assets/img/Ellipse 14.svg" alt="">
                     <h3>Email</h3>
                     <p>ejemplo@correro.com</p>
-                    <a href=""><i class="fa-solid fa-envelope"></i></a>
+                    <a href="mailto:ejemplo@correo.com"><i class="fa-solid fa-envelope"></i></a>
                 </div>
             </div>
         </section>
